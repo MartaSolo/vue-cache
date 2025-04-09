@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-</script>
-
 <template>
   <header class="app__header">
     <nav class="app__navigation">
@@ -13,6 +9,10 @@ import { RouterLink, RouterView } from 'vue-router'
   <RouterView />
 </template>
 
+<script setup lang="ts">
+import { RouterLink, RouterView } from 'vue-router';
+</script>
+
 <style scoped lang="scss">
 .app {
   &__header {
@@ -20,19 +20,24 @@ import { RouterLink, RouterView } from 'vue-router'
     line-height: 1.5;
     max-height: 100vh;
     height: 40px;
+    display: flex;
+    align-items: center;
   }
 
   &__navigation {
     display: inline-flex;
     gap: 14px;
-    background-color: palegoldenrod;
     margin-right: auto;
   }
 
   &__link {
     font-size: 20px;
-    color: black;
+    color: gray;
     padding: 0 14px;
   }
+}
+
+.router-link-active {
+  color: black;
 }
 </style>
