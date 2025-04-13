@@ -61,5 +61,6 @@ export const useFetch = <T>(url: string, customOptions?: FetchOptions) => {
     data,
     error,
     loading,
+    fromCache,
   };
 };

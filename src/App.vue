@@ -25,6 +25,7 @@ import { RouterLink, RouterView } from 'vue-router';
   }
 
   &__navigation {
+    margin: 0 20px;
     display: inline-flex;
     gap: 14px;
     margin-right: auto;
@@ -33,7 +34,6 @@ import { RouterLink, RouterView } from 'vue-router';
   &__link {
     font-size: 20px;
     color: gray;
-    padding: 0 14px;
   }
 }
 
